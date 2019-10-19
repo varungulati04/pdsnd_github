@@ -182,6 +182,7 @@ def user_stats(df):
         print('\n\nColumns not found\n\n')
 
 def main():
+    """Code Called when function execution starts"""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
@@ -192,11 +193,13 @@ def main():
         user_stats(df)
         raw_data(df)
         
+        #while loop for looping through dataset
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
           
 def raw_data(df):
+    """Displaing RAW data of data set"""
     i=0
     dflength=len(df)
     #print(dflength)
@@ -209,5 +212,6 @@ def raw_data(df):
             break
     if (i+5)>dflength:
        print(df.iloc[i:dflength])
-if __name__ == "__main__":
+if __name__ == "__main__":  
+    """this is called automatically when py execution statrs"""
 	main()

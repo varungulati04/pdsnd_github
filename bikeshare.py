@@ -178,6 +178,7 @@ def user_stats(df):
         print('\n\nColumns not found\n\n')
 
 def main():
+    """Code Called when function execution starts"""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)

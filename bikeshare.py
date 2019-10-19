@@ -194,6 +194,7 @@ def main():
             break
           
 def raw_data(df):
+    """Displaing RAW data of data set"""
     i=0
     dflength=len(df)
     #print(dflength)

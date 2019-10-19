@@ -1,10 +1,14 @@
+# Importing the required packages in Pandas Code
 import time
 import pandas as pd
 import numpy as np
+
+# setting the options to make sure output is not trimmed
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
 
+# Three different datasets and paths that can be imported
 CITY_DATA = { 'chicago': 'C:\\Users\\varun\\OneDrive\\Udacity\\chicago.csv',
               'new york city': 'C:\\Users\\varun\\OneDrive\\Udacity\\new_york_city.csv',
               'washington': 'C:\\Users\\varun\\OneDrive\\Udacity\\washington.csv' }

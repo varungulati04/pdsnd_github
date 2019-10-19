@@ -208,5 +208,6 @@ def raw_data(df):
             break
     if (i+5)>dflength:
        print(df.iloc[i:dflength])
-if __name__ == "__main__":
+if __name__ == "__main__":  
+    """this is called automatically when py execution statrs"""
 	main()
